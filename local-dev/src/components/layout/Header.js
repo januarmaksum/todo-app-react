@@ -5,11 +5,10 @@ function Header() {
   return (
     <header>
       <h1>TodoList App</h1>
-      <Link style={linkStyle} to="/">
+      <Link style={linkStyle} to={`${process.env.PUBLIC_URL}/`}>
         Home
-      </Link>{" "}
-      |{" "}
-      <Link style={linkStyle} to="/about">
+      </Link>{" "}|{" "}
+      <Link style={linkStyle} to={`${process.env.PUBLIC_URL}/about`}>
         About
       </Link>
     </header>
